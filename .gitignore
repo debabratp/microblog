@@ -38,3 +38,6 @@ nosetests.xml
 venv
 app.db
 microblog.log*
+.DS_Store
+app/.DS_Store
+deployment/.DS_Store
