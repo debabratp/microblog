@@ -19,7 +19,8 @@ pipeline {
     registryCredential = 'debabratp'
     dockerImage = ''
   }
-  agent any
+  //agent any
+  agent node1
   stages {
     stage('Cloning Git') {
       steps {
