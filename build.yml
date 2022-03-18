@@ -3,6 +3,6 @@ phases:
   build:
     commands:
       - aws ecr get-login-password | docker login --username AWS --password-stdin $ECR_ENDPOINT
-      - docker build -t builtimage .
-      - docker tag builtimage:latest $ECR_IMAGE_URL:latest
+      - docker build -t hello-repository .
+      - docker tag hello-repository:latest $ECR_IMAGE_URL:latest
       - docker push $ECR_IMAGE_URL:latest
